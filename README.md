@@ -8,4 +8,5 @@ Prueba Cura Deuda
 Requirements
 
 Python3
+
 Mysql
