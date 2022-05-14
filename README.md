@@ -3,7 +3,7 @@ Prueba Cura Deuda
 
 
 
-Manual Installation
+#Manual Installation
 
 Requirements
 
