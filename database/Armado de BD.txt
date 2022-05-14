@@ -1,0 +1,43 @@
+d_codigo                                  C
+d_asenta                                  C
+d_ciudad                                   C
+c_tipo_asenta                          C
+id_asenta_cpcons                  C
+d_zona                                        C
+
+d_estado                         E
+c_estado                          E
+
+
+c_cve_ciudad                     M
+D_mnpio                              M
+c_mnpio                               M
+
+d_CP                                                              ?
+c_oficina                                                      ?
+c_CP                                                              ?
+d_tipo_asenta                                            ?
+
+
+ESTADO(
+c_estado[PK]
+D_estado
+)
+
+MUNICIPIO(
+c_mnpio[PK]
+D_mnpio
+c_cve_ciudad
+c_estado[FK]
+)
+
+COLONIA(
+id_asenta_cpcons[PK]
+d_codigo
+d_asenta
+d_zona
+d_ciudad  
+c_tipo_asenta
+c_mnpio[FK]	
+)
+

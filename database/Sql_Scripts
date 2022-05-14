@@ -1,0 +1,34 @@
+create DATABASE Sepomex;
+USE Sepomex;
+
+
+CREATE TABLE Estado
+(
+    c_estado INTEGER not NULL PRIMARY KEY,
+    D_estado VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Municipio
+(
+    c_mnpio INTEGER NOT NULL PRIMARY KEY,
+    D_MNPIO VARCHAR(100) NOT NULL,
+    c_cve_ciudad INTEGER NOT NULL,
+    c_estado INTEGER NOT NULL
+
+);
+
+
+CREATE TABLE Colonia
+(
+    id_asenta_cpcons INTEGER NOT NULL PRIMARY KEY,
+    d_codigo INTEGER NOT NULL,
+    d_asenta VARCHAR(100) NOT NULL,
+    d_zona VARCHAR(100) NOT NULL,
+    d_ciudad VARCHAR(100) NOT NULL,
+    c_tipo_asenta INTEGER NOT NULL,
+    c_mnpio INTEGER NOT NULL
+
+);
+
+ALTER TABLE Municipio ADD FOREIGN KEY (c_estado) REFERENCES Estado(c_estado);
+ALTER TABLE Colonia ADD FOREIGN KEY (c_mnpio) REFERENCES Municipio(c_mnpio);
