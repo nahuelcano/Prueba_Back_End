@@ -6,7 +6,7 @@ class Estado(db.Model):
     c_estado = db.Column(db.Integer, primary_key=True, unique=True, nullable=False)
     D_estado = db.Column(db.String(100), nullable=False)
 
-
+### armado para Query
 #    def c_dic(self):
 #       diccionario = {}
 #        for column in self.__table__.colums:
@@ -21,7 +21,7 @@ class Municipio(db.Model):
     c_cve_ciudad = db.Column(db.Integer, nullable=False)
     c_estado = db.Column(db.Integer, db.ForeignKey("Estado.c_estado"))
 
-
+### armado para Query
 #    def c_dic(self):
 #        diccionario = {}
 #        for column in self.__table__.colums:
@@ -41,7 +41,7 @@ class Colonia(db.Model):
     c_tipo_asenta = db.Column(db.Integer, nullable=False)
     c_mnpio = db.Column(db.Integer, db.ForeignKey("Municipio.c_mnpio"))
 
-
+### armado para Query
 #    def c_dic(self):
 #        diccionario = {}
 #        for column in self.__table__.colums:

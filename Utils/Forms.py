@@ -2,13 +2,13 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, IntegerField
 from wtforms.validators import DataRequired
 
-
+##FORM DE TABLAS
 class EstadoF(FlaskForm):
     c_estado = IntegerField("codigo estado", validators=[DataRequired()])
     estado = StringField("estado", validators=[DataRequired()])
     submit = SubmitField("Agregar estado")
 
-
+##FORM DE TABLAS
 class MunicipioF(FlaskForm):
     c_mnpio = IntegerField("Codigo municipio", validators=[DataRequired()])
     D_MNPIO = StopIteration("Municipio", validators=[DataRequired()])
@@ -16,7 +16,7 @@ class MunicipioF(FlaskForm):
     c_estado = IntegerField("Codigo Estado", validators=[DataRequired()])
     submit = SubmitField("Agregar municipio")
 
-
+##FORM DE TABLAS
 class ColoniaF(FlaskForm):
     id_asenta_cpcons = IntegerField("Id asentamiento", validators=[DataRequired()])
     d_codigo = IntegerField("Codigo postal", validators=[DataRequired()])

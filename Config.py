@@ -1,5 +1,5 @@
 import os
-
+##DATA BASE
 ##modificar segun tu configuracion
 user = "root"  # os.environ["MYSQL_USER"]
 password = "5492"  # os.environ["MYSQL_PASSWORD"]

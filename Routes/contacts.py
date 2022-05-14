@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, flash
 from requests import request
-from Models.Tables import Estado, Municipio, Colonia
+###  from Models.Tables import Estado, Municipio, Colonia ### IMPOTES DE FORMS
 from Utils.db import db
 
 
