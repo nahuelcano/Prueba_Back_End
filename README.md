@@ -5,8 +5,8 @@ Prueba Cura Deuda
 
 #Manual Installation
 
-Requirements
-
 Python3
 
 Mysql
+
+Requirements.txt
